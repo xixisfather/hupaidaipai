@@ -10,16 +10,11 @@
     </parent>
 
     <groupId>com.brand.portal</groupId>
-    <artifactId>eureka-provider</artifactId>
-    <name>eureka-provider</name>
-    <description>portal eureka provider</description>
+    <artifactId>eureka-consumer</artifactId>
+    <name>eureka-consumer</name>
+    <description>protal eureka consumer</description>
 
     <dependencies>
-        <dependency>
-            <groupId>com.brand.portal</groupId>
-            <artifactId>mybatis-config</artifactId>
-            <version>0.0.1</version>
-        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>

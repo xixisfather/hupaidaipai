@@ -1,0 +1,29 @@
+server:
+  port: 8080
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8092/eureka/,http://localhost:8093/eureka/
+  instance:
+    prefer-ip-address: true
+
+comsumer:
+  uri: lb://eureka-comsumer
+
+spring:
+  application:
+    name: gateway-client
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+
+#    routes:
+#      - id: route_service_one
+#        uri: ${comsumer.uri}
+#        predicates:
+#          - Path=/user/**
+

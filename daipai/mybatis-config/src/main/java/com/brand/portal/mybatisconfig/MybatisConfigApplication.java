@@ -1,18 +1,16 @@
-package com.brand.portal.eurekaprovider;
-
+package com.brand.portal.mybatisconfig;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
-@EnableDiscoveryClient
 @MapperScan("com.brand.portal.mybatisconfig.mapper")
-public class EurekaproviderApplication {
+public class MybatisConfigApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EurekaproviderApplication.class, args);
+        SpringApplication.run(MybatisConfigApplication.class, args);
+
     }
 
 }
